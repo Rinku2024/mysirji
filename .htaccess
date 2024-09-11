@@ -1,0 +1,19 @@
+ <IfModule mod_rewrite.c>
+   RewriteEngine On
+  RewriteRule ^(.*)$ public/$1 [L]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+ </IfModule>
+
+# Allow access to all files
+<FilesMatch "\.(jpg|jpeg|png|gif)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+RewriteEngine On
+RewriteRule ^uploads/(.*)$ /storage/uploads/$1 [L]
+
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?editevolv\.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [F,NC]

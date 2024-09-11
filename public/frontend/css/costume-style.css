@@ -1,0 +1,71 @@
+
+/* .navbar-area.navbar-area-two {
+    overflow-y: hidden;
+} */
+
+htm,body {
+    overflow-x: hidden;
+}
+
+ul.navbar-nav.m-auto {
+    margin: 0px !important;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+
+.navbar-area {
+    /* background-color: #ffffff;
+    background: rgb(9 62 108); */
+    background: #030f21;
+}
+
+li.nav-item a {
+    color: #fff !important;
+}
+.navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu {
+    background: rgb(9 62 108);  
+}
+
+.navbar-area.is-sticky {
+    /* background: rgb(9 62 108);   */
+    background: #030f21;
+}
+.navbar-area .main-nav nav .navbar-nav .nav-item a.active {
+    color: #ff8c00 !important;
+}
+
+a.nav-link:hover {
+    color: #ff8c00 !important;
+}
+
+/* footer */
+.footer-area, .subscribe-area, .copy-right-area {
+    background-color: #6f6f7b25;
+}
+
+.subscribe-area .container, .single-footer-widget h3::before, .copy-right-area {
+    border-bottom: 1px solid #c2c2c7;
+}
+
+.single-footer-widget h3 {
+    color: #093e6c;
+    font-size: 30px;
+}
+
+.subscribe-area .subscribe-content h2, .subscribe-area .subscribe-content span {
+    color: #093e6c;
+}
+
+.copy-right-area p {
+    color: #093e6c;
+}
+
+.subscribe-area .newsletter-form .form-control:focus {
+    border-color: #093e6c;
+}
+
+.subscribe-area .newsletter-form .form-control {
+    color: #093e6c;
+}
